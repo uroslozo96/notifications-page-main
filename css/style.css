@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: hsl(210deg, 60%, 98%);
+}
+
+p {
+  color: hsl(219deg, 12%, 42%);
+}
+
+.container {
+  margin: 2rem;
+  width: 700px;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.header .notification_box {
+  display: flex;
+  align-items: center;
+}
+.header .notification_box #notifications {
+  background-color: hsl(219deg, 85%, 26%);
+  margin-left: 0.5rem;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 800;
+  border-radius: 0.5rem;
+}
+.header #mark_all {
+  cursor: pointer;
+}
+.header #mark_all:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.main .notification_card {
+  display: flex;
+  align-items: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+.main .notification_card img {
+  width: 50px;
+}
+.main .notification_card .description {
+  margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main .notification_card .description strong {
+  color: hsl(224deg, 21%, 14%);
+  cursor: pointer;
+}
+.main .notification_card .description strong:hover {
+  color: hsl(219deg, 85%, 26%);
+}
+.main .notification_card .message_card {
+  display: flex;
+  align-items: center;
+}
+.main .notification_card .chess_img {
+  margin-left: auto;
+}
+.main .unread {
+  background-color: hsl(211deg, 68%, 94%) !important;
+}
+.main .unread p:first-of-type::after {
+  content: "";
+  background-color: hsl(1deg, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.main .message {
+  padding: 1rem;
+  border: 1px solid hsl(205deg, 33%, 90%);
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin: 0 0 0 5rem;
+}
+.main .message:hover {
+  background-color: hsl(211deg, 68%, 94%);
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    margin: 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
